@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Atributes</title>
+    </head>
+
+    <body>
+        <a href="https://youtube.com/shorts/JPUFbhYpS4s?si=mhau5wlI2EzorgYr">Video</a><br>
+
+        <img src="src/Preved.jpg" width="200" height="200" alt="превед"><br>
+
+        <p style="color:red" title="red">Red</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Base</title>
+    </head>
+    
+    <body>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+
+        <p>paragraph</p>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me...</a><br>
+
+        <img src="src/cat3.png" width="500" height="=800" alt="cat">
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B&I</title>
+    </head>
+
+    <body>
+        <div style="background-color:black;color:white;padding:20px;">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the <span style="color: red; font-weight: bold;">United Kingdom</span>, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+
+        <!--some elems are block  h1
+        some elems are inline     img
+        
+        we can check it with border property. If border cover 100% width of page. Then is a block, otherways is a inline
+        
+        but we also have    inline-block  but no one property by default is inline-block.  This a type which convenient for moves and other 
+        modifies.
+        -->
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+
+        <style>
+            h1 {
+                border-radius: 5px;
+                border-color: rgb(242, 255, 0);
+                border: 5px;
+                border-style:dashed;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>We have 3 ways to enter CSS</h1>
+        <p style="border: 4px solid rgb(255, 0, 140)">Inline</p>
+        <p>Internal</p>
+        <p title="Another file">External</p>
+        <a href="CSS_External.html">Here</a>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>External CSS</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body>
+        <h1>H1</h1>
+        <p>Paragraph</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            }
+
+            .note {
+                font-size:120%;
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="city">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+        </div>
+
+        <div class="city">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div class="city">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <h1>My <span class="note">Important</span> Heading</h1>
+        <p>This is some <span class="note">important</span> text.</p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colors</title>
+    </head>
+    <body>
+
+        <p>Same as color name "Tomato":</p>
+
+        <!-- Tomato color examples using different color value formats -->
+
+        <h1 style="background-color:rgb(255, 99, 71); border: 10px solid purple; color:black;">rgb(255, 99, 71)</h1>
+        <h1 style="background-color:#ff6347; border: 2px dotted blue; color:black;">#ff6347</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%); color: black;">hsl(9, 100%, 64%)</h1>
+
+        <p>Same as color name "Tomato", but 50% transparent:</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+        <p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Comments are not displayed in the browser -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIV</title>
+
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 9 million inhabitants.</p>
+        </div>
+
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 700,000 inhabitants.</p>
+        </div>
+
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has over 4 million inhabitants.</p>
+        </div>
+
+        <hr>
+
+        <div style="width:200px; height:200px; overflow: auto; float: left; color: red; background-color: #FF00003F;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 9 million inhabitants.</p>
+        </div>
+
+        <div style="width:200px; height:200px; overflow: auto; float: left; color: green; background-color: #00ff003F;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 700,000 inhabitants.</p>
+        </div>
+
+        <div style="width:200px; height:200px; overflow: auto; float: left; color:blue; background-color: #0000FF3F;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has over 4 million inhabitants.</p>
+        </div>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+     <head>
+
+        <title>Title</title>
+
+     </head>
+
+     <body>
+        <h1>First work. (maybe......)</h1>
+
+        <p>Some page</p>
+     </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+
+    <body>
+        <p1>This is a good stuff</p1>
+
+        <!--This is not good option-->
+        <!--<p>this is not-->
+
+        <br>
+
+        <p>
+            The Happy Little Sun <br>
+
+            The happy little sun wakes up the day, <br>
+            Smiles at the clouds and says, “Let’s play!” <br>
+            Birds start singing, skies turn blue, <br>
+            Flowers whisper, “Good morning to you!” <br>
+
+            Run, jump, laugh, and have some fun, <br>
+            Every day is bright with the sun 🌞
+        </p>
+
+        <!-- br like \n-->
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Icon</title>
+        <link rel="icon" type="image/x-icon" href="src/cat3.png">
+    </head>
+    
+    <body>
+        <h1>This is my icon</h1>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<!--
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text             <strong> - Important text
+<i> - Italic text           <em> - Emphasized text
+<mark> - Marked text        background-color: yellow
+<small> - Smaller text
+<del> - Deleted text        cross out text
+<ins> - Inserted text       underline
+<sub> - Subscript text      down
+<sup> - Superscript text    up
+-->
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heading</title>
+    </head>
+
+    <body>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+
+        <h1 style="font-size:90px">Head of heads</h1>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+
+    <body>
+        
+        <h1>This is a Heading</h1>
+
+        <p> This is a paragraph.</p>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 id="myHeader">My Header</h1>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMG</title>
+        
+        <style>
+            img:hover {
+                width: 30%;
+                height: 30%;
+            }
+
+            body {
+            background-image: url("src/cat3.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+
+            p {
+                color: #ffffff;
+            }
+        </style>
+    </head>
+
+    <body >
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=u6GxG3NxcI7pmvPt"><img src="data:image/jpeg;base64,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"></a><hr>
+        <img src="src/cat1.png" style="width: 500px; height: 500px;"><hr>
+
+        <p><img src="src/cat2.png" alt="cat" style="float:right;width:500px;height:500px;">
+        The image will float to the right of the text.</p><br><hr>
+
+        <p><img src="src/cat2.png" alt="cat" style="float:left;width:500px;height:500px;">
+        The image will float to the left of the text.</p><br><hr>
+
+        <p><img src="src/circle.png" alt="cat" usemap="#Fractal"></p>
+        <map name="#Fractal">
+            <area shape="circle" coords="335, 335, 335" href="https://youtu.be/dQw4w9WgXcQ?si=KZvfTLpZNWtZLXkH">
+        </map>
+        <hr><br>
+
+        <picture>
+            <source media="(min-width: 465px)" srcset="src/cat2.png">
+            <img src="src/cat1.png">
+        </picture>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+     <head>
+
+        <title>Introduction</title>
+
+     </head>
+
+     <body>
+        <h1>This is introductions Heading</h1>
+
+        <p>This is introductions paragraph</p>
+     </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links</title>
+        <style>
+            #link_to_chapter {
+                display: block; /*by default  tag a is inline, so we use display: block for use margin-top: 2000px */
+                margin-top: 2000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a><br>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a><br>
+        <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a><br>
+        <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a><br>
+
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+        
+        <h2>Relative URLs</h2>
+        <p><a href="https://www.pinterest.com/pin/948218896547035870/">Img</a></p>
+
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=u6GxG3NxcI7pmvPt" title="click me please"><img src="https://www.pinterest.com/pin/291326669649205574/" alt="HTML tutorial"></a><br><hr><br>
+        <button onclick="document.location='https://youtu.be/dQw4w9WgXcQ?si=u6GxG3NxcI7pmvPt'">HTML Tutorial</button>
+
+        <hr><br>
+        <h1 id="C1">chapter</h1>
+        <p>text</p>
+        
+        <a id="link_to_chapter" href="#C1">Jump to Chapter</a>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LIST</title>
+
+        <style>
+            ul {
+                overflow: hidden;
+                background-color: #FF00004F;
+            }
+
+            ol {
+                overflow: hidden;
+                background-color: #00FF004F;
+            }
+
+            dl {
+                overflow: hidden;
+                background-color: #0000FF4F;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+
+            <hr>
+
+            <ol type="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <ol type="A">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <ol type="i">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+ 
+            <ol type="I">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+ 
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+ 
+            <ol start="99">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+ 
+        </ol>
+
+        <hr>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+
+            <hr>
+
+            <ul style="list-style-type: disc;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <ul style="list-style-type: square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <ul style="list-style-type: circle;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <ul style="list-style-type: none;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+
+        </ul>
+
+        <hr>
+
+        <dl>
+            <dt>Coffee</dt>
+                <dd>- it is black</dd>
+            <dt>Milk</dt>
+                <dd>- it is white</dd>
+        </dl>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+        <link rel="icon" type="image/x-icon" href="src/download.jpg">
+    </head>
+    
+    <body>
+        <h1>Page title</h1>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paragraphs</title>
+    </head>
+
+    <body>
+        <h1>H1</h1>
+        <p>P</p>
+        <hr>
+        <h1>H1</h1>
+        <p>P</p>
+        <hr>
+        <p>This is<br>a paragraph<br>with line breaks.</p>
+        <hr>
+
+        <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+        </pre>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quatations</title>
+    </head>
+    <body>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF was worked to help people and nature thrive.As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live. 
+        </blockquote> <br>
+
+        <p>WWF's goal is to: <q>Buid futere where people and nature will live in harmony.</q></p>
+        <p>The <abbr title="World Health organization">WHO</abbr> was found in 1948.</p>
+
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        <bdo dir="rtl">This text will be writen form right to left</bdo>
+    </body>
+</html>
