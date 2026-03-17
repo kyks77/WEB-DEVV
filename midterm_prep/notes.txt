@@ -1,0 +1,87 @@
+                                                                Javascript:
+
+Types:
+
+Primitives:
+Boolean. true и false.
+null. Специальное ключевое слово, обозначающее нулевое или «пустое» значение. Поскольку JavaScript чувствителен к регистру, null не то же самое, что Null, NULL или любой другой вариант.
+undefined. Свойство глобального объекта, не имеющее присвоенного значения.
+Number. Целое число или число с плавающей запятой. Например: 42 или 3.14159.
+BigInt. Целое число с произвольной точностью. Например: 9007199254740992n.
+String. Последовательность символов, представляющая текстовое значение. Например: "Привет".
+Symbol. Тип данных, экземпляры которого уникальны и неизменяемы.
+
+
+Declarations:  
+
+let x = 12;
+a variable in it's visible block(if statements, functions, yada yada yada)
+
+var x = "sdfjs"
+a global variable
+
+const P = 3.14;
+a constant, unmutable, only read. However, it's properties are accessable.
+for example:
+const a = new Student("a");
+Student.name = "Snjzdjhfas";
+
+x = 12;
+Strict Mode declaration, not preferred.
+
+Note: About functions, if they are declared as a variable, they won't be lifted.
+Example:
+This will be lifted:
+ foo();
+ function foo(){
+    console.log("Foo");
+ }
+This will not:
+ baz();
+ var bax = function(){
+    console.log("baz");
+ }
+
+JavaScript — это динамически типизированный язык. Это означает, что вам не нужно указывать тип данных переменной, когда вы её объявляете, типы данных преобразуются автоматически по мере необходимости во время выполнения скрипта.
+
+parseInt(numstring) - parses int from string.
+parseFloat(numstring) - parses float from string.
+
+Literals:
+A definitive way to initialize a certain variable.
+
+An Array: var x = [10,122,1333]; Note: x = [10, , 12] -> x[1] = undefined.(you have to use 2 , around it)
+
+A Boolean: either true or false.
+
+An Integer: enter a number(binary, other ones too).
+0, 117 и -345 (десятичная система счисления)
+015, 0001 и -077 (восьмеричная система счисления)
+0x1123, 0x00111 и -0xF1A7 (шестнадцатеричная система счисления)
+0b11, 0b0011 и -0b11 (двоичная система счисления)
+
+A Float: enter a number like this: "n.m".
+
+An Object: a list of 0 or more pairs of properties and values, contained in {}.
+For example:
+var myCar = {name: "Honda Civic", kms: 10000, functional: true}
+You can also nest objects:
+var car = {basic: mycar, price: "1 mln slaves"} Note: car.basic.x to access nested x properties.
+Incorrect property names should be contained in (" ").
+Example:
+var unusualPropertyNames = {
+  "": "An empty string",
+  "!": "Bang!"
+}
+To access those properties, use ([x]):
+console.log(unusualPropertyNames[""]);
+
+
+
+If-else statements:
+Same as in C++.
+
+
+
+
+
